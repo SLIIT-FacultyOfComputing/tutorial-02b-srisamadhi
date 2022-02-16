@@ -29,21 +29,15 @@ int main() {
 }
 
 long Factorial(int no){
-  int i;
-  for(i=1;i<=no;i++){
-    i=i*1;
+  long temp=1;
+  for(int i=1;i<=no;i++){
+    temp=temp*i;
   }
-  return i;
+  return temp;
   
 }
 
 long nCr(int n, int r){
-  
-  Factorial(n);
-  Factorial(r);
-
-  
-  
-  
+   return Factorial(n)/(Factorial(r)*Factorial(n-r));
 }
 
